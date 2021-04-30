@@ -28,6 +28,11 @@ html, body {
   position: relative;
 }
 
+.nav a:hover {
+  color: #9C759D;
+}
+
+
 .main-nav {
   text-align: center;
   font-size: 1.5em;
@@ -62,8 +67,8 @@ h3 {
 }
 
 .main-image {
-  height: 300px;
-  width: 500px;
+  height: 150px;
+  width: 250px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -150,6 +155,23 @@ h3 {
   position: fixed;
   width: 100%;
 }
+
+.fab {
+  color: black;
+}
+
+.cool-feet a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 0 1%;
+  right: 20px;
+}
+
+.fab:hover {
+  color:#614E62;
+}
+
 
 h5 {
   color:#161B26;
