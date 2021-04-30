@@ -9,5 +9,8 @@ So far I have a total of 3 pages, which are:
 - 9 + 10 Bot Invite Page (Bot by Zylly - aka me)
 - Poop Bot Invite Page (Bot by Morphizn, credit to them)
 
+# Changelog
+- Added (and also fixed) social links at the bottom of the page | 4/29/21
+
 # Conclusion
 As I have mentioned earlier I am quite new to this (still, since I barely learnt much about html in school), and I am still learning more and more. Again, feedback is appreciated and I hope to improve this site. :)
