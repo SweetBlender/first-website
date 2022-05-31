@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+:root {
+  --primary-color: #F5F5F5;
+  --secondary-color: #FFFFFF;
+  --tertiary-color: #000000;
+  --quaternary-color: #858585;
+  --quinary-color: #E3E3E3;
+  --denary-color: #ffa6fe;
+  --what-goes-after-denary-color: #353b44;
+  --what-goes-after-denary-color-2: #748195;
+}
+
+/* Here are the dark theme colors: */
+
+/*
+
+:root {
+  --primary-color: #1d2025;
+  --secondary-color: #282c33;
+  --tertiary-color: #ffffff;
+  --quaternary-color: #99aab5;
+  --denary-color: #64dbff;
+  --what-goes-after-denary-color: #353b44;
+  --what-goes-after-denary-color-2: #748195;
+}
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Overpass;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    position: relative;
+    padding-bottom: 146px;
+    min-height: 100vh;
+}
+
+/* The navigation bar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    padding: 20px 30%;
+    outline: var(--quinary-color) solid 2px;
+    box-shadow: .1em .150em 1em rgba(0, 0, 0, 0.12);
+}
+
+header img {
+    height: 60px;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-family: Overpass;
+    padding: 9px 20px;
+    border-radius: 3px;
+    transition: all 0.3s ease 0s;
+}
+
+header ul li a:hover {
+    color: var(--denary-color);
+}
+
+/* Announcement Banner */
+
+/* Middle part of the page. All the main stuff */
+
+main {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.banner-lol {
+    width: 20vh;
+    height: 20vh;
+    background-position: center;
+}
+
+
+article {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--secondary-color);
+    box-shadow: .1em .150em 1em rgba(62, 62, 62, 0.12);
+    border-radius: 10px;
+}
+
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+article h2 {
+    font-family: 'Readex Pro', sans-serif;
+}
+
+article h3 {
+    margin: 10px 0 25px 0;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+article p {
+    font-family: 'Nunito', sans-serif;
+    color: var(--quaternary-color);
+    margin-top: 16px;
+    line-height: 24px;
+}
+
+.banner-thingy {
+    width: 250px;
+    height: 150px;
+}
+
+.funny-thing {
+    display: inline-block;
+    border-left: 6px solid;
+
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-color: var(--quaternary-color);
+    border-radius: 5px;
+
+    border-color: #f87cff;
+    background-color: #f3f3f3;
+
+    width: 35vh;
+    text-align: center;
+
+    height: 137px;
+}
+
+h2 {
+    color: var(--tertiary-color);
+}
+
+h3 {
+    color: var(--tertiary-color);
+}
+
+/* Form Info */
+
+.Login {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 50vh;
+    border-radius: 7px;
+    outline: var(--quinary-color) solid 2px;
+}
+
+.login p {
+    color: var(--what-goes-after-denary-color);
+}
+
+label {
+    display: block;
+    padding: 1rem 0 .25rem;
+    font-size: 17px;
+}
+
+.Login label {
+    display: block;
+}
+
+.Login h3 {
+    color: var(--quaternary-color);
+}
+
+.user-input input {
+    color: var(--secondary-color);
+    border: 3px solid #ddd;
+    transition: border-color 0.5s ease;
+}
+
+user-input input:valid {
+    border-color: #222;
+}
+
+input {
+    width: 5vh;
+    background-color: var(--secondary-color);
+    border: 2.5px solid var(--secondary-color);
+    border-radius: 5px;
+    margin: 5px 0;
+    outline: none;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+input:focus {
+    border-color: var(--denary-color);
+    box-shadow: none;
+}
+
+.Tools-Button {
+    border: 0;
+    border-radius: 12px;
+    background: #00bbff;
+    padding: .5rem;
+    color: white;
+    margin: 1rem 0;
+
+    width: 250px;
+    height: 45px;
+    cursor: pointer;
+
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+
+    transition: ease 0.25s;
+}
+
+.Tools-Button:hover {
+    background-color: #00e1ff;
+}
+
+input, textarea {
+    color: var(--what-goes-after-denary-color-2);
+    display: block;
+    width: 100%;
+}
+
+.login h4 {
+    color: var(--denary-color);
+    text-decoration: none;
+}
+
+.login a {
+    text-decoration: none;
+}
+
+/* Tools Page Specific */
+
+.Tools-Stuff {
+    display: block;
+}
+
+ul li {
+    list-style: none;
+}
+
+.Tools-Links-1 a {
+    text-decoration: none;
+    color: #F05BFF;
+}
+
+.Tools-Links-2 a {
+    text-decoration: none;
+    color: #945BFF;
+}
+
+.Tools-Links-3 a {
+    text-decoration: none;
+    color: #5B8AFF;
+}
+
+.Tools-Links-4 a {
+    text-decoration: none;
+    color: #00D1EA;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    padding: 15px;
+    position: absolute;
+    outline: var(--quinary-color) solid 2px;
+    box-shadow: .1em .150em 1em rgba(0, 0, 0, 0.12);
+    width: 100%;
+    bottom: 0;
+}
+
+footer h2 {
+    font-family: 'Readex Pro', sans-serif;
+}
+
+footer p {
+    font-family: Nunito;
+    color: var(--quaternary-color);
+}
+
+footer i {
+    font-size: 25px;
+    color: var(--quaternary-color);
+    margin: 10 15px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+footer i:hover {
+    color: var(--denary-color);
+}
